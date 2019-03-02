@@ -1,0 +1,129 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.main-container {
+    width: 70%;
+    margin: 0 auto;
+    padding: 20px 10px 20px 10px;
+    font-family: 'Playfair Display', serif;
+}
+
+.main-container > h1 {
+    color: #571611fa;
+    font-size: 36px;
+    letter-spacing: 5px;
+}
+
+.top-header {
+    color: #d48d8df1;
+    font-size: 0.7em;
+    float: right;
+    height: 25px;
+    text-align: center;
+    min-width: 94px;
+    width: 14%;
+    padding: 8px 5px 0px 5px;
+    display: inline-block;    
+    margin-bottom: 10px;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+.top-header:hover {
+    color: #7c4040;
+    background-color: #f1b3b363;
+    transition: all 0.5s;
+}
+.top-header:active {
+    transform: translateY(4px)
+}
+
+.top-header > p {
+    display: inline-block;
+    margin-left: 2px;
+}
+
+.main-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.main-head {
+    background-color: #530e0e9d;
+    height: 60px;
+    color: #fcfcfc;
+}
+
+th {
+    font-size: 0.9em;
+    font-weight: 400;
+    height: 50px;
+}
+
+.main-header-id {
+    width: 4%;
+}
+
+.main-header-fname {
+    width: 13%;
+}
+.main-header-lname {
+    width: 13%;
+}
+.main-header-action {
+    width: 20%;
+}
+
+.table-body {
+    font-size: 0.8em;
+    text-align: center;
+}
+
+.table-row {
+    height: 70px;
+    border-bottom: 1px solid rgba(200,0,0,0.4);
+}
+
+.table-row:hover {
+    background: #fdc4c4d2;
+    cursor: pointer;
+}
+
+
+.btn {
+    width: 60px;
+    border-radius: 5px;
+    min-height: 32px;
+    color: white;
+    cursor: pointer;
+    border: none;
+    font-size: 1em;
+    margin: 3px 3px;
+}
+
+.btn-edit {
+    background-color: #1c73f5fa;
+    transition: all 0.3s;
+    
+}
+.btn-edit:active {
+    box-shadow: rgba(0,0,200,0.8)
+}
+.btn-edit:hover {
+    background-color: #0a52bdd2;
+    transition: all 0.3s;
+}
+
+.btn-delete {
+    background-color: #f10909e0;
+    transition: all 0.3s;
+}
+.btn-delete:active {
+    box-shadow: rgba(200,0,0,0.8)
+}
+.btn-delete:hover {
+    background-color: #b60808e0;
+    transition: all 0.3s;
+}
