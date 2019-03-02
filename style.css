@@ -4,21 +4,21 @@
 }
 
 .main-container {
-    width: 70%;
+    width: 80%;
     margin: 0 auto;
     padding: 20px 10px 20px 10px;
     font-family: 'Playfair Display', serif;
 }
 
 .main-container > h1 {
-    color: #571611fa;
+    color: #571611;
     font-size: 36px;
     letter-spacing: 5px;
 }
 
 .top-header {
-    color: #d48d8df1;
-    font-size: 0.7em;
+    color: #d47171;
+    font-size: 0.85em;
     float: right;
     height: 25px;
     text-align: center;
@@ -33,7 +33,7 @@
 
 .top-header:hover {
     color: #7c4040;
-    background-color: #f1b3b363;
+    background-color: #f1b3b3;
     transition: all 0.5s;
 }
 .top-header:active {
@@ -45,6 +45,105 @@
     margin-left: 2px;
 }
 
+.add-container {
+    display: none;
+    border-radius: 10px;
+    position: absolute;
+    top: 15%;
+    left: 20%;
+    width: 70%;
+    max-width: 400px;
+    margin: 0 auto;
+    height: 450px;
+    background: #f1f1f1;
+    border: 2px solid rgba(112, 70, 70,1);
+}
+
+.add-header {
+    width: 99.1%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    display: inline-block;
+    height: 35px;
+    background: rgba(112, 70, 70,1);;
+    padding: 7px 0 0 10px;
+    position: absolute;
+    top: -2px;
+    left: -2px;
+}
+
+.add-header > h3 {
+    display: inline;
+    color: white;
+    margin: 5px 5px 0 0;
+    font-size: 14px;
+}
+
+.add-close-btn {
+    float: right;
+    margin-right: 10px;
+    margin-top: 2px;
+    font-size: 14px;
+    height: 25px;
+    width: 25px;
+    border-radius: 5px;
+    color: rgba(112, 70, 70,1);
+}
+
+.add-student-form {
+    color: black;
+    margin-top: 40px;
+    padding: 15px 10px;
+    width: 100%;
+    font-size: 14px;
+}
+
+.add-student-row {
+    width: 100%;
+    min-height: 32px;
+    height: auto;
+    display: flex;
+    flex-grow: inherit;
+}
+
+.add-student-btn-row {
+    width: 100%;
+    text-align: right;
+    min-height: 40px;
+    position: relative;
+    margin-top: 5px;
+}
+
+.add-student-col-label {
+    width: 30%;
+}
+.add-student-col-input {
+    width: 65%;
+}
+
+#input-alamat {
+    height: 100px;
+    vertical-align: top;
+}
+
+.add-student-input {
+    padding-left: 10px;
+    height: 25px;
+    width: 100%;
+    font-size: 12px;
+}
+
+.btn-add-student {
+    background-color: #530e0e;
+    transition: all 0.3s;
+}
+
+.btn-add-student:hover {
+    background-color: #b60808;
+    transition: all 0.3s;
+}
+
+/* table list for students */
 .main-table {
     width: 100%;
     border-collapse: collapse;
@@ -77,18 +176,20 @@ th {
 }
 
 .table-body {
-    font-size: 0.8em;
+    font-size: 0.9em;
     text-align: center;
 }
 
 .table-row {
     height: 70px;
     border-bottom: 1px solid rgba(200,0,0,0.4);
+    transition: background-color 0.3s;
 }
 
 .table-row:hover {
     background: #fdc4c4d2;
     cursor: pointer;
+    transition: background-color 0.3s;
 }
 
 
@@ -111,6 +212,7 @@ th {
 .btn-edit:active {
     box-shadow: rgba(0,0,200,0.8)
 }
+
 .btn-edit:hover {
     background-color: #0a52bdd2;
     transition: all 0.3s;
@@ -126,4 +228,14 @@ th {
 .btn-delete:hover {
     background-color: #b60808e0;
     transition: all 0.3s;
+}
+
+
+
+/* Media Queries */
+@media only screen and (max-width: 600px) {
+    .main-container {
+        width: 100%;
+        padding: 0 10px;
+    }
 }
